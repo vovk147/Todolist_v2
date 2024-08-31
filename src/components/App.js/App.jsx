@@ -2,7 +2,6 @@ import HomePage from "../HomePage/HomePage";
 import TodoPage from "../TodoPage/TodoPage";
 import TrashBinPage from "../TrashBinPage/TrashBinPage";
 import Header from "../Common/Header/Header";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
