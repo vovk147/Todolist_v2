@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import "./TodoPage.scss";
 import { getLocalStorage, setLocalStorage } from "../../service/localStorage";
 import { FaStar, FaRegStar, FaTrashAlt, FaPen } from 'react-icons/fa';
