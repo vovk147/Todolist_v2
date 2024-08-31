@@ -1,0 +1,40 @@
+header {
+    margin-block: 20px;
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        padding: 20px;
+        color: white;
+        background-color: #333;
+        border-radius: 10px;
+
+
+        .header__logo {
+            font-size: 20px;
+            
+        }
+
+        .header__nav {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            .nav-link {
+                color: white;
+                text-decoration: none;
+
+                &.nav_active {
+                    border-bottom: 2px solid white; 
+                   
+                  }
+            }
+
+           
+
+        }
+    }
+
+}
