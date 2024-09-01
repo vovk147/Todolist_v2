@@ -13,7 +13,6 @@ const TrashBinPage = () => {
   const [isRemoveAllConfirmationOpen, setIsRemoveAllConfirmationOpen] = useState(false);
   const [todoToRestore, setTodoToRestore] = useState(null);
   const [todoToDelete, setTodoToDelete] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setLocalStorage(TRASH_KEY, trashedTodos);
@@ -90,7 +89,7 @@ const TrashBinPage = () => {
         </div>
       </div>
 
-      {/* Restore Confirmation Modal */}
+      {}
       {isRestoreConfirmationOpen && (
         <div className="confirmation-modal" onClick={handleCloseConfirmations}>
           <div className="confirmation-content" onClick={(e) => e.stopPropagation()}>
@@ -106,7 +105,7 @@ const TrashBinPage = () => {
         </div>
       )}
 
-      {/* Delete Confirmation Modal */}
+      {}
       {isDeleteConfirmationOpen && (
         <div className="confirmation-modal" onClick={handleCloseConfirmations}>
           <div className="confirmation-content" onClick={(e) => e.stopPropagation()}>
@@ -122,7 +121,7 @@ const TrashBinPage = () => {
         </div>
       )}
 
-      {/* Remove All Confirmation Modal */}
+      {}
       {isRemoveAllConfirmationOpen && (
         <div className="confirmation-modal" onClick={handleCloseConfirmations}>
           <div className="confirmation-content" onClick={(e) => e.stopPropagation()}>

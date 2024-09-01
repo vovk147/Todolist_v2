@@ -75,7 +75,7 @@ const TodoPage = () => {
   };
 
   const handleSaveEdit = () => {
-    const updatedTodos = todos.map(todo => 
+    const updatedTodos = todos.map(todo =>
       todo.id === todoToEdit.id
         ? { ...todo, title: newTodoTitle, text: newTodoText }
         : todo
@@ -87,7 +87,7 @@ const TodoPage = () => {
   const handleToggleFavorite = (id) => {
     const updatedTodos = todos.map(todo =>
       todo.id === id ? { ...todo, favorite: !todo.favorite } : todo
-    ).sort((a, b) => b.favorite - a.favorite); // Favorite todos at the top
+    ).sort((a, b) => b.favorite - a.favorite); 
     setTodos(updatedTodos);
   };
 
@@ -141,6 +141,7 @@ const TodoPage = () => {
             <button className="close-btn" onClick={handleCloseModal}>
               &times;
             </button>
+            <h2>Add New Todo</h2>
             <input
               type="text"
               placeholder="Enter todo title"
@@ -166,6 +167,7 @@ const TodoPage = () => {
             <button className="close-btn" onClick={handleCloseEditModal}>
               &times;
             </button>
+            <h2>Edit Todo</h2>
             <input
               type="text"
               placeholder="Enter todo title"
@@ -191,6 +193,7 @@ const TodoPage = () => {
             <button className="close-btn" onClick={handleCloseDeleteConfirmation}>
               &times;
             </button>
+            <h2>Delete Todo</h2>
             <p>Are you sure you want to delete this todo?</p>
             <div className="confirmation-buttons">
               <button className="confirm" onClick={handleDeleteTodo}>Delete</button>

@@ -4,20 +4,44 @@ const HomePage = () => {
   return (
     <main id="home">
       <div className="container">
-        <h1>Welcome to Todo App!</h1>
+        <h1>Welcome to the Todo App!</h1>
         <section className="intro">
-          <h2>How to Use This App</h2>
-          <p>
-            This application helps you manage your tasks efficiently. Here's a quick guide on how to use it:
-          </p>
+          <h2>How to Use This Task Management App:</h2>
+          <h3>Adding a New Task:</h3>
+          <ol>
+            <li>Click the <strong>"New Task"</strong> button at the top of the page.</li>
+            <li>Fill in the fields: enter the task title and description.</li>
+            <li>Click <strong>"Add Task"</strong> to save it to your list.</li>
+          </ol>
+
+          <h3>Editing a Task:</h3>
+          <ol>
+            <li>Find the task you want to edit and click the <strong>"Edit"</strong> button (pencil icon).</li>
+            <li>Modify the task title or description in the form that appears.</li>
+            <li>Click <strong>"Save"</strong> to save the changes.</li>
+          </ol>
+
+          <h3>Marking a Task as Completed:</h3>
           <ul>
-            <li><strong>Add New Todos:</strong> Click the "New Todo" button to create a new task. Fill in the title and description, then save it.</li>
-            <li><strong>View and Edit Todos:</strong> On the Todos page, you can see all your tasks. Click the "Edit" button to modify a task's details.</li>
-            <li><strong>Mark as Favorite:</strong> Use the star icon to mark a task as favorite for easy access.</li>
-            <li><strong>Delete Todos:</strong> Click the "Delete" button to move tasks to the Trash Bin. From there, you can restore or permanently delete tasks.</li>
-            <li><strong>Manage Trash Bin:</strong> On the Trash Bin page, restore deleted tasks or permanently remove them from the bin.</li>
+            <li>Next to each task, there is a checkbox. Click it to mark the task as completed.</li>
           </ul>
-          <p>Enjoy organizing your tasks and staying productive!</p>
+
+          <h3>Marking a Task as Favorite:</h3>
+          <ul>
+            <li>Click the star icon next to the task to add it to your favorites list or remove it from it.</li>
+          </ul>
+
+          <h3>Deleting a Task:</h3>
+          <ol>
+            <li>Click the <strong>"Delete"</strong> button (trash can icon) next to the task you want to delete.</li>
+            <li>Confirm the deletion in the pop-up window. The task will be moved to the <strong>"Trash Bin."</strong></li>
+          </ol>
+
+          <h3>Managing Tasks in the "Trash Bin":</h3>
+          <ol>
+            <li>Go to the <strong>"Trash Bin"</strong> page to view deleted tasks.</li>
+            <li>You can either restore a task or delete it permanently.</li>
+          </ol>
         </section>
       </div>
     </main>
@@ -25,3 +49,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
