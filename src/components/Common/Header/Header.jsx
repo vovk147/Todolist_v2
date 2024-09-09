@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.scss";
+import { FaHome, FaListAlt, FaTrashAlt } from "react-icons/fa"; 
 
 const Header = () => {
 	const location = useLocation(); 
@@ -11,13 +12,16 @@ const Header = () => {
 					<div className="header__logo">Todo list</div>
 					<nav className="header__nav">
 						<Link to="/" className={`nav-link ${location.pathname === "/" ? "nav_active" : ""}`}>
-							Home
+							<FaHome className="icon" />
+							<span className="link-text">Home</span>
 						</Link>
 						<Link to="/todo" className={`nav-link ${location.pathname === "/todo" ? "nav_active" : ""}`}>
-							Todo
+							<FaListAlt className="icon" />
+							<span className="link-text">Todo</span>
 						</Link>
 						<Link to="/trash-bin" className={`nav-link ${location.pathname === "/trash-bin" ? "nav_active" : ""}`}>
-							Trash bin
+							<FaTrashAlt className="icon" />
+							<span className="link-text">Trash bin</span>
 						</Link>
 					</nav>
 				</div>
