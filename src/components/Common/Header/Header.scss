@@ -19,6 +19,7 @@ header {
         display: flex;
         align-items: center;
         gap: 35px;
+        
   
         .nav-link {
           color: white;
@@ -66,6 +67,7 @@ header {
       background-color: #333; /* Background for the bottom panel */
       padding: 10px 0;
       gap: 0;
+      z-index: 1000;
   
       .nav-link {
         flex-direction: column;
