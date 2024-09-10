@@ -185,8 +185,8 @@ main {
 
             .close-btn {
                 position: absolute;
-                top: -30px;
-                right: -30px;
+                top: 0px;
+                right: 0px;
                 width: 35px;
                 height: 35px;
                 background-color: #2e2e2e;
@@ -196,17 +196,7 @@ main {
                 cursor: pointer;
                 padding: 0;
 
-                &:hover {
-                    color: yellow;
-                }
-
-                @media (width: 768px) {
-
-                    .close-btn{
-                   display: none;     
-                    }
-                    
-                }
+               
 
             }
 
